@@ -1,2 +1,0 @@
-# Personal Website
-ianhenrybateman.com
