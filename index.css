@@ -9,7 +9,6 @@ body {
 
 .bannerSection {
   height: calc(100vh - 50px);
-  background-color: red;
 }
 
 .footerSection {
@@ -43,4 +42,9 @@ body {
 
 .footerSectionLink:hover {
   opacity: 1;
+}
+
+#c {
+  height: calc(100vh - 50px);
+  width: 100vw;
 }
