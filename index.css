@@ -1,14 +1,16 @@
-body {
+html, body {
   padding: 0;
   margin: 0;
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   font-size: 14px;
   font-family: Helvetica, sans-serif;
 }
 
 .bannerSection {
   height: calc(100vh - 50px);
+  width: 100vw;
+  overflow: hidden;
 }
 
 .footerSection {
@@ -42,6 +44,11 @@ body {
 
 .footerSectionLink:hover {
   opacity: 1;
+}
+
+canvas {
+  display: block;
+  /* background: red; */
 }
 
 #c {
