@@ -60,7 +60,7 @@ html, body {
 .profileSection {
   min-width: 200px;
   max-width: 600px;
-  width: 50%;
+  width: 100%;
   margin: 50px 30px;
   background: #ffffff;
   border-radius: 3px;
