@@ -5,15 +5,16 @@ html, body {
   width: 100%;
   font-size: 14px;
   font-family: Helvetica, sans-serif;
+  background: rgb(246, 246, 246);
 }
 
 .contentSection {
-  height: calc(100vh - 50px);
   width: 100vw;
   overflow: hidden;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  min-height: calc(100vh - 50px);
 }
 
 .footerSection {
@@ -54,34 +55,51 @@ html, body {
   height: 180px;
   width: 180px;
   border-radius: 50%;
-  position: absolute;
 }
 
 .profileSection {
-  /* border: 1px solid red; */
-  min-width: 320px;
+  min-width: 200px;
   max-width: 600px;
   width: 50%;
-  margin-top: 50px;
+  margin: 50px 30px;
+  background: #ffffff;
+  border-radius: 3px;
+  padding: 30px;
 }
 
 .profileContent {
-  /* border: 1px solid green; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profileImageSection, .profileTextSection {
   display: block;
 }
 
 .profileHeader {
-  font-size: 30px;
-  text-align: right;
-  /* border: 1px solid blue; */
-  display: block;
+  font-size: 20px;
+  text-align: center;
   margin-top: 25px;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
+  display: block;
 }
 
 .profileSubHeader {
-  text-align: right;
-  opacity: .5;
-  display: block;
+  text-align: left;
   line-height: 25px;
+  display: block;
+}
+
+.profileSubItem {
+  display: block;
+}
+
+.profileSubHeaderIcon {
+  padding-right: 20px;
+}
+
+.profileSubHeaderText {
+  opacity: .5;
 }

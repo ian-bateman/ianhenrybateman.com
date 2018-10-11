@@ -14,7 +14,5 @@ function startTimer() {
 
 var images = [], x = -1;
 images[0] = "images/Ian1.png";
-images[1] = "images/Ian2.jpg";
+images[1] = "images/Ian2.png";
 images[2] = "images/Ian3.png";
-images[3] = "images/Ian4.jpg";
-images[4] = "images/Ian5.png";
