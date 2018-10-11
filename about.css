@@ -7,10 +7,13 @@ html, body {
   font-family: Helvetica, sans-serif;
 }
 
-.bannerSection {
+.contentSection {
   height: calc(100vh - 50px);
   width: 100vw;
   overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .footerSection {
@@ -47,12 +50,38 @@ html, body {
   opacity: 1;
 }
 
-canvas {
-  display: block;
-  /* background: red; */
+.profilePicture {
+  height: 180px;
+  width: 180px;
+  border-radius: 50%;
+  position: absolute;
 }
 
-#c {
-  height: calc(100vh - 50px);
-  width: 100vw;
+.profileSection {
+  /* border: 1px solid red; */
+  min-width: 320px;
+  max-width: 600px;
+  width: 50%;
+  margin-top: 50px;
+}
+
+.profileContent {
+  /* border: 1px solid green; */
+  display: block;
+}
+
+.profileHeader {
+  font-size: 30px;
+  text-align: right;
+  /* border: 1px solid blue; */
+  display: block;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+.profileSubHeader {
+  text-align: right;
+  opacity: .5;
+  display: block;
+  line-height: 25px;
 }
