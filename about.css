@@ -8,13 +8,17 @@ html, body {
   background: rgb(246, 246, 246);
 }
 
-.contentSection {
+.contentWrapper {
   width: 100vw;
-  overflow: hidden;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
   min-height: calc(100vh - 50px);
+}
+
+.contentSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
 
 .footerSection {
@@ -55,16 +59,14 @@ html, body {
   height: 180px;
   width: 180px;
   border-radius: 50%;
+  margin-top: 50px;
 }
 
 .profileSection {
-  min-width: 200px;
   max-width: 600px;
   width: 100%;
-  margin: 50px 30px;
   background: #ffffff;
   border-radius: 3px;
-  padding: 30px;
 }
 
 .profileContent {
@@ -78,6 +80,10 @@ html, body {
   display: block;
 }
 
+.profileTextSection {
+  margin-bottom: 25px;
+}
+
 .profileHeader {
   font-size: 20px;
   text-align: center;
@@ -89,11 +95,25 @@ html, body {
 .profileSubHeader {
   text-align: left;
   line-height: 25px;
-  display: block;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .profileSubItem {
   display: block;
+  text-decoration: none;
+}
+
+.profileSubItemLink {
+  color: #096dd9;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.profileSubItemLink:hover {
+  color: #003a8c;
 }
 
 .profileSubHeaderIcon {
@@ -102,4 +122,54 @@ html, body {
 
 .profileSubHeaderText {
   opacity: .5;
+}
+
+.profileInfoColumn {
+  min-width: 220px;
+}
+
+.cryptoSection {
+  max-width: 600px;
+  width: 100%;
+  margin: 25px 0;
+  background: #ffffff;
+  border-radius: 3px;
+}
+
+.cryptoTextSection {
+  padding: 20px 25px;
+  display: block;
+}
+
+.cryptoSubItem {
+  line-height: 35px;
+  font-family: Lucida Console, Lucida Sans Typewriter, monaco, Bitstream Vera Sans Mono, monospace;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.cryptoSubHeaderIcon {
+  display: inline-block;
+  padding-right: 20px;
+  height: 25px;
+  width: 25px;
+  margin-top: 5px;
+
+}
+
+.cryptoSubHeaderText {
+  width: 100%;
+  opacity: .5;
+  font-size: 12px;
+  padding: 0 15px;
+  border-radius: 2px;
+  background-color: rgb(236, 236, 236);
+  text-overflow: ellipsis;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
 }

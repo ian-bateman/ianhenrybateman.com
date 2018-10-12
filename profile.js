@@ -13,6 +13,7 @@ function startTimer() {
 }
 
 var images = [], x = -1;
-images[0] = "images/Ian1.png";
-images[1] = "images/Ian2.png";
-images[2] = "images/Ian3.png";
+images[0] = "images/Ian0.png";
+images[1] = "images/Ian1.png";
+images[2] = "images/Ian2.png";
+images[3] = "images/Ian3.png";
