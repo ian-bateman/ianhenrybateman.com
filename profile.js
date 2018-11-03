@@ -17,3 +17,6 @@ images[0] = "images/Ian0.png";
 images[1] = "images/Ian1.png";
 images[2] = "images/Ian2.png";
 images[3] = "images/Ian3.png";
+images[4] = "images/Ian4.png";
+images[5] = "images/Ian5.png";
+images[6] = "images/Ian6.png";
