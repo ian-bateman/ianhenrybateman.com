@@ -178,13 +178,17 @@ html, body {
   white-space: nowrap;
 }
 
-.listSection {
+.listWrapper {
   max-width: 600px;
   width: 100%;
   border-radius: 3px;
-  background-color: #ffffff;
+  background: #ffffff;
   outline: none;
   text-decoration: none;
+}
+
+.listSection {
+  width: 100%;
 }
 
 .listTextSection {
