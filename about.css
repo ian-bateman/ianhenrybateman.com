@@ -182,7 +182,7 @@ html, body {
   max-width: 600px;
   width: 100%;
   border-radius: 3px;
-  background: #ffffff;
+  background-color: #ffffff;
   outline: none;
   text-decoration: none;
 }

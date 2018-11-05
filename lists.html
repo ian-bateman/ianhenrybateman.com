@@ -13,16 +13,77 @@
     <div>
       <div class="contentWrapper">
         <span class="contentSection">
-          <div class="travelSection">
-            <div class="travelTextSection">
-              <span class="travelSubTextSection">Travel Log</span>
-              <span class="travelButtonSection" onclick="hideTravelSection()">➕</span>
+
+          <a class="backWrapper" href="about.html">
+            <div class="backSection">
+              <div class="backTextSection">
+                <span>⬅️</span>
+                <span>Back to About Page</span>
+              </div>
+            </div>
+          </a>
+          <div class="listHeaderWrapper">
+            <div class="listHeaderSection">
+              <div class="listHeader">Ian&apos;s Lists</div>
+              <div class="listSubHeader">Here are some things I like to keep track of.<br />Lists include places I&apos;ve been, books I&apos;m reading, and a few others.</div>
             </div>
           </div>
-          <span class="travelIFrameSection" style="display: none;">
-            <iframe class="countryTravelMap" src="https://www.google.com/maps/d/u/0/embed?mid=1SrE7oTMEdOuLNJHlEXZfmlY5ft8YNe3x"></iframe>
-            <iframe class="stateTravelMap" src="https://www.google.com/maps/d/u/0/embed?mid=1c2iBbL0KQuxfte06zqBj6JKR6snzOqdb"></iframe>
-          </span>
+
+
+            <div class="listSection">
+              <div class="listTextSection" onclick="hideSection('travel')">
+                <span class="listSubTextSection">Travel Log</span>
+                <span class="listButtonSection travelButton">➕</span>
+              </div>
+            </div>
+            <span class="travelSection" style="display: none;">
+              <iframe class="countryTravelMap" src="https://www.google.com/maps/d/u/0/embed?mid=1SrE7oTMEdOuLNJHlEXZfmlY5ft8YNe3x"></iframe>
+              <iframe class="stateTravelMap" src="https://www.google.com/maps/d/u/0/embed?mid=1c2iBbL0KQuxfte06zqBj6JKR6snzOqdb"></iframe>
+            </span>
+
+            <div class="listSection">
+              <div class="listTextSection" onclick="hideSection('reading')">
+                <span class="listSubTextSection">Book List</span>
+                <span class="listButtonSection readingButton">➕</span>
+              </div>
+            </div>
+            <span class="listSection readingSection" style="display: none;">
+              <div class="listContent">
+                <div class="listTitle">Currently Reading</div>
+                <ol>
+                  <li><a href="https://www.goodreads.com/book/show/27323.Hiroshima" target="_blank">Hiroshima</a>, by John Hersey</li>
+                  <li><a href="https://www.goodreads.com/book/show/433567.Flatland" target="_blank">Flatland</a>, by Edwin A. Abbott</li>
+                  <li><a href="https://www.goodreads.com/book/show/22894391-virtual-banking" target="_blank">Virtual Banking</a>, by Dan Schatt</li>
+                  <li><a href="https://www.goodreads.com/book/show/281123.Softwar" target="_blank">Softwar</a>, by Matthew Symonds</li>
+                  <li><a href="https://www.goodreads.com/book/show/34928122-artemis" target="_blank">Artemis</a>, by Andy Weir</li>
+                  <li><a href="https://www.goodreads.com/book/show/119322.The_Golden_Compass" target="_blank">The Golden Compass</a>, by Philip Pullman</li>
+                  <li><a href="https://www.goodreads.com/book/show/54728.Entering_Space" target="_blank">Entering Space</a>, by Robert Zubrin</li>
+                  <li><a href="https://www.goodreads.com/book/show/472331.Watchmen" target="_blank">Watchmen</a>, by Alan Moore</li>
+                </ol>
+                <div class="listTitle">2018</div>
+                <ol>
+                  <li><a href="https://www.goodreads.com/book/show/7967.Speaker_for_the_Dead" target="_blank">Speaker for the Dead</a>, by Orson Scott Card</li>
+                  <li><a href="https://www.goodreads.com/book/show/37976541-bad-blood" target="_blank">Bad Blood</a>, by John Carreyrou</li>
+                </ol>
+              </div>
+            </span>
+
+            <div class="listSection">
+              <div class="listTextSection" onclick="hideSection('watch')">
+                <span class="listSubTextSection">Film List</span>
+                <span class="listButtonSection watchButton">➕</span>
+              </div>
+            </div>
+            <span class="listSection watchSection" style="display: none;">
+              <div class="listContent">
+                <div class="listTitle">2018</div>
+                <ol>
+                  <li><a href="https://en.wikipedia.org/wiki/First_Man_(film)" target="_blank">First Man</a>, Damien Chazelle</li>
+                  <li><a href="https://en.wikipedia.org/wiki/2001:_A_Space_Odyssey_(film)" target="_blank">2001: A Space Odyssey</a>, Stanley Kubrick</li>
+                </ol>
+              </div>
+            </span>
+
         </span>
       </div>
       <div class="footerSection">
@@ -39,6 +100,6 @@
         </span>
       </div>
     </div>
+    <script src="lists.js"></script>
   </body>
-  <script src="travel.js"></script>
 </html>

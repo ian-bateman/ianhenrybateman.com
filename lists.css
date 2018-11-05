@@ -59,14 +59,65 @@ html, body {
   opacity: 1;
 }
 
-.travelSection {
+.backWrapper {
   max-width: 600px;
   width: 100%;
   border-radius: 3px;
   background-color: #ffffff;
+  outline: none;
+  text-decoration: none;
+  margin-bottom: 25px;
 }
 
-.travelTextSection {
+.backSection {
+  width: 100%;
+}
+
+.backTextSection {
+  padding: 20px 25px;
+  color: #000000;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  opacity: .5;
+  transition: all 0.3s ease;
+}
+
+.backTextSection:hover {
+  opacity: 1;
+}
+
+.listHeaderWrapper {
+  max-width: 600px;
+  width: 100%;
+  border-radius: 3px;
+  background-color: #ffffff;
+  margin-bottom: 25px;
+}
+
+.listHeaderSection {
+  padding: 20px 25px;
+}
+
+.listHeader {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.listSubHeader {
+  opacity: .5;
+}
+
+.listSection {
+  max-width: 600px;
+  width: 100%;
+  border-radius: 3px;
+  background-color: #ffffff;
+  margin-bottom: 25px;
+}
+
+.listTextSection {
   padding: 20px 25px;
   color: #000000;
   display: flex;
@@ -75,17 +126,23 @@ html, body {
   align-items: center;
 }
 
-.travelSubTextSection {
+.listSubTextSection {
   opacity: .5;
 }
 
-.travelButtonSection {
+.listButtonSection {
   opacity: .5;
   transition: all 0.3s ease;
 }
 
-.travelButtonSection:hover {
+.listButtonSection:hover {
   opacity: 1;
+}
+
+.listTitle {
+  font-size: 17px;
+  padding: 10px 0;
+  opacity: .75;
 }
 
 .countryTravelMap {
@@ -94,7 +151,7 @@ html, body {
   height: 400px;
   border: none;
   border-radius: 3px;
-  margin: 25px 0;
+  margin-bottom: 25px;
 }
 
 .stateTravelMap {
@@ -103,4 +160,31 @@ html, body {
   height: 400px;
   border: none;
   border-radius: 3px;
+  margin-bottom: 25px;
+}
+
+.listContent {
+  padding: 20px 25px;
+}
+
+.listContent ol {
+  padding: 0 20px;
+  margin: 0;
+}
+
+.listContent ol li {
+  padding: 10px 0;
+  color: rgba(0, 0, 0, .5);
+}
+
+.listContent ol li a {
+  text-decoration: none;
+  outline: none;
+  color: #096dd9;
+  opacity: .5;
+  transition: all 0.3s ease;
+}
+
+.listContent ol li a:hover {
+  color: #003a8c;
 }
