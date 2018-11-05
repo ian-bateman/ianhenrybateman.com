@@ -5,12 +5,20 @@ html, body {
   width: 100%;
   font-size: 14px;
   font-family: Helvetica, sans-serif;
+  background: rgb(246, 246, 246);
 }
 
-.bannerSection {
-  height: calc(100vh - 50px);
+.contentWrapper {
   width: 100vw;
-  overflow: hidden;
+  height: 100%;
+}
+
+.contentSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 20px 70px;
 }
 
 .footerSection {
@@ -48,13 +56,4 @@ html, body {
 
 .footerSectionLink:hover {
   opacity: 1;
-}
-
-canvas {
-  display: block;
-}
-
-#c {
-  height: calc(100vh - 50px);
-  width: 100vw;
 }
