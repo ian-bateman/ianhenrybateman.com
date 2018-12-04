@@ -1,7 +1,7 @@
 (function() {
 
   // set up the canvas
-  var canvas = document.getElementById('canvas'),
+  var canvas = document.getElementById('life'),
   context = canvas.getContext('2d');
 
   canvas.width = 0;
