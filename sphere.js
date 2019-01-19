@@ -320,11 +320,12 @@ function addParticle(x0,y0,z0,vx0,vy0,vz0) {
   newParticle.dead = false;
 
 	//particle color
-	r = 255;
-	g = 255;
-	b = 0;
+	r = Math.floor(Math.random() * 255);
+	g = Math.floor(Math.random() * 255);
+	b = Math.floor(Math.random() * 255);
 
-	newParticle.color = "rgba("+r+","+g+","+b+","; //partial string for color which will be completed by appending alpha value.
+	//partial string for color which will be completed by appending alpha value.
+	newParticle.color = "rgba("+r+","+g+","+b+",";
 
   if (Math.random() < 0.5) {
     newParticle.right = true;
