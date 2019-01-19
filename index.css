@@ -1,22 +1,11 @@
-html, body {
-  padding: 0;
-  margin: 0;
-  height: 100%;
-  width: 100%;
+html,body {
+  background-color:#000000;
+  color:#555555;
   font-size: 14px;
-  font-family: Helvetica, sans-serif;
 }
 
 .bannerSection {
-  height: 100vh;
-  width: 100vw;
-  overflow: hidden;
-  background-color: black;
-  color: #ffffff;
-}
-
-#canvasOne {
-  margin: 0 auto;
+    text-align: center;
 }
 
 .footerSection {
@@ -54,13 +43,4 @@ html, body {
 
 .footerSectionLink:hover {
   opacity: 1;
-}
-
-canvas {
-  display: block;
-}
-
-#c {
-  height: calc(100vh - 50px);
-  width: 100vw;
 }
