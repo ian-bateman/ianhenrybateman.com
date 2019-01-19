@@ -15,10 +15,9 @@ html, body {
   color: #ffffff;
 }
 
-/* #canvasOne {
-  height: 100%;
-  width: 100%;
-} */
+#canvasOne {
+  margin: 0 auto;
+}
 
 .footerSection {
   height: 50px;
