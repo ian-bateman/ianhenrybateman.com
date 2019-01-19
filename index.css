@@ -8,14 +8,20 @@ html, body {
 }
 
 .bannerSection {
-  height: calc(100vh - 50px);
+  height: 100vh;
   width: 100vw;
   overflow: hidden;
+  background-color: black;
+}
+
+#canvasOne {
+  height: 100%;
+  width: 100%;
 }
 
 .footerSection {
   height: 50px;
-  background-color: #000000;
+  background-color: none;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
