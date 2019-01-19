@@ -77,8 +77,8 @@
 
 	  gravity = 0; //try changing to a positive number (not too large, for example 0.3), or negative for floating upwards.
 
-	  particleRad = 2.5;
-	  sphereRad = 280;
+	  particleRad = 4; //original 2.5
+	  sphereRad = 420; //original 280
 	  sphereCenterX = 0;
 	  sphereCenterY = 0;
 	  sphereCenterZ = -3 - sphereRad;
@@ -86,7 +86,7 @@
 	  //alpha values will lessen as particles move further back, causing depth-based darkening:
 	  zeroAlphaDepth = -750;
 
-	  turnSpeed = 2*Math.PI/1600; //the sphere will rotate at this speed (one complete rotation every 1600 frames).
+	  turnSpeed = 2*Math.PI/400; //the sphere will rotate at this speed (one complete rotation every 400 (original 1600) frames).
 	  turnAngle = 0; //initial angle
 
 	  timer = setInterval(onTimer, 1000/24);
