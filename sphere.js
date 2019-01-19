@@ -80,7 +80,7 @@ function canvasApp() {
 		displayWidth = theCanvas.width;
 		displayHeight = theCanvas.height;
 
-		fLen = 320; //represents the distance from the viewer to z=0 depth.
+		fLen = 320; //represents the distance from the viewer to z=0 depth (320 originally).
 
 		//projection center coordinates sets location of origin
 		projCenterX = displayWidth / 2;
@@ -108,7 +108,7 @@ function canvasApp() {
 		//alpha values will lessen as particles move further back, causing depth-based darkening:
 		zeroAlphaDepth = -750;
 
-		turnSpeed = 2*Math.PI/1600; //the sphere will rotate at this speed (one complete rotation every 1600 frames).
+		turnSpeed = 2*Math.PI/1600; //the sphere will rotate at this speed (one complete rotation every 1600 (originally) frames).
 		turnAngle = 0; //initial angle
 
 		timer = setInterval(onTimer, 1000/24);

@@ -3,11 +3,6 @@ function displayNextImage() {
     document.getElementById("profile").src = images[x];
 }
 
-function displayPreviousImage() {
-    x = (x <= 0) ? images.length - 1 : x - 1;
-    document.getElementById("profile").src = images[x];
-}
-
 function startTimer() {
     setInterval(displayNextImage, 3000);
 }
