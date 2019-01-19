@@ -70,9 +70,9 @@ function canvasApp() {
 		numToAddEachFrame = 8;
 
 		//particle color
-		r = Math.random() * 255;
-		g = Math.random() * 255;
-		b = Math.random() * 255;
+		r = 70;
+		g = 255;
+		b = 140;
 
 		rgbString = "rgba("+r+","+g+","+b+","; //partial string for color which will be completed by appending alpha value.
 		particleAlpha = 1; //maximum alpha
@@ -80,11 +80,11 @@ function canvasApp() {
 		displayWidth = theCanvas.width;
 		displayHeight = theCanvas.height;
 
-		fLen = 320; //represents the distance from the viewer to z=0 depth (320 originally).
+		fLen = 320; //represents the distance from the viewer to z=0 depth.
 
 		//projection center coordinates sets location of origin
-		projCenterX = displayWidth / 2;
-		projCenterY = displayHeight / 2;
+		projCenterX = displayWidth/2;
+		projCenterY = displayHeight/2;
 
 		//we will not draw coordinates if they have too large of a z-coordinate (which means they are very close to the observer).
 		zMax = fLen-2;
@@ -108,7 +108,7 @@ function canvasApp() {
 		//alpha values will lessen as particles move further back, causing depth-based darkening:
 		zeroAlphaDepth = -750;
 
-		turnSpeed = 2*Math.PI/1600; //the sphere will rotate at this speed (one complete rotation every 1600 (originally) frames).
+		turnSpeed = 2*Math.PI/1600; //the sphere will rotate at this speed (one complete rotation every 1600 frames).
 		turnAngle = 0; //initial angle
 
 		timer = setInterval(onTimer, 1000/24);
