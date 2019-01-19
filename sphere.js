@@ -27,6 +27,23 @@ function canvasApp() {
 	var theCanvas = document.getElementById("canvasOne");
 	var context = theCanvas.getContext("2d");
 
+	theCanvas.width = 0;
+	theCanvas.height = 0;
+
+	// function to resize canvas dynamically
+	// Drawings need to be inside this function otherwise they will be reset when
+	// the browser window is resized and the canvas will be cleared.
+	function sizeCanvas() {
+		console.log('called');
+		theCanvas.width = window.innerWidth;
+		theCanvas.height = window.innerHeight;
+	}
+
+	sizeCanvas();
+
+	// calls resize canvas when browser resized, resizes the canvas to fill browser window dynamically
+	// window.addEventListener('resize', sizeCanvas, false);
+
 	var displayWidth;
 	var displayHeight;
 	var timer;
@@ -70,9 +87,9 @@ function canvasApp() {
 		numToAddEachFrame = 8;
 
 		//particle color
-		r = 70;
+		r = 255;
 		g = 255;
-		b = 140;
+		b = 255;
 
 		rgbString = "rgba("+r+","+g+","+b+","; //partial string for color which will be completed by appending alpha value.
 		particleAlpha = 1; //maximum alpha
