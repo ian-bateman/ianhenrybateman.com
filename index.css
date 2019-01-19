@@ -12,6 +12,8 @@ html, body {
   width: 100vw;
   overflow: hidden;
   background-color: black;
+  color: #ffffff;
+  font-size: 20px;
 }
 
 #canvasOne {
