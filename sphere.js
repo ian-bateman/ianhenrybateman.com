@@ -75,13 +75,6 @@ function init() {
   wait = 1;
   count = wait - 1;
   numToAddEachFrame = 8;
-
-  //particle color
-  r = 255;
-  g = 255;
-  b = 255;
-
-  rgbString = "rgba("+r+","+g+","+b+","; //partial string for color which will be completed by appending alpha value.
   particleAlpha = 1; //maximum alpha
 
 
@@ -124,7 +117,6 @@ function init() {
 // Drawings need to be inside this function otherwise they will be reset when
 // the browser window is resized and the canvas will be cleared.
 function sizeCanvas() {
-  console.log('heyy');
   theCanvas.width = window.innerWidth;
   theCanvas.height = window.innerHeight;
   // sets display dimensions
@@ -250,7 +242,7 @@ function onTimer() {
       //depth-dependent darkening
       depthAlphaFactor = (1-rotZ/zeroAlphaDepth);
       depthAlphaFactor = (depthAlphaFactor > 1) ? 1 : ((depthAlphaFactor<0) ? 0 : depthAlphaFactor);
-      context.fillStyle = rgbString + depthAlphaFactor*p.alpha + ")";
+      context.fillStyle = p.color + depthAlphaFactor*p.alpha + ")";
 
       //draw
       context.beginPath();
@@ -326,6 +318,14 @@ function addParticle(x0,y0,z0,vx0,vy0,vz0) {
   newParticle.velZ = vz0;
   newParticle.age = 0;
   newParticle.dead = false;
+
+	//particle color
+	r = Math.random() * 255;
+	g = Math.random() * 255;
+	b = Math.random() * 255;
+
+	newParticle.color = "rgba("+r+","+g+","+b+","; //partial string for color which will be completed by appending alpha value.
+
   if (Math.random() < 0.5) {
     newParticle.right = true;
   }
