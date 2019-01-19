@@ -13,13 +13,12 @@ html, body {
   overflow: hidden;
   background-color: black;
   color: #ffffff;
-  font-size: 20px;
 }
 
-#canvasOne {
+/* #canvasOne {
   height: 100%;
   width: 100%;
-}
+} */
 
 .footerSection {
   height: 50px;
