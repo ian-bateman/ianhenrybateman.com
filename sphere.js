@@ -70,9 +70,9 @@ function canvasApp() {
 		numToAddEachFrame = 8;
 
 		//particle color
-		r = Math.random() * 255;
-		g = Math.random() * 255;
-		b = Math.random() * 255;
+		r = 70;
+		g = 255;
+		b = 140;
 
 		rgbString = "rgba("+r+","+g+","+b+","; //partial string for color which will be completed by appending alpha value.
 		particleAlpha = 1; //maximum alpha
