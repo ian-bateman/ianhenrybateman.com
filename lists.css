@@ -123,18 +123,11 @@ html, body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-}
-
-.listSubTextSection {
-  opacity: .5;
-}
-
-.listButtonSection {
-  opacity: .5;
   transition: all 0.3s ease;
+  opacity: .5;
 }
 
-.listButtonSection:hover {
+.listTextSection:hover {
   opacity: 1;
 }
 
