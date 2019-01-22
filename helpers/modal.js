@@ -23,3 +23,10 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+// When the user hits the ESC key and the modal is open, close it
+window.addEventListener("keydown", function(e){
+    if(e.keyCode === 27) {
+        modal.style.display = "none";
+    }
+});

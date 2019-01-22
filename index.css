@@ -103,12 +103,12 @@ html, body {
 .modal-content {
   position: fixed;
   bottom: 0;
-  background-color: #fefefe;
+  background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
   -webkit-animation-name: slideIn;
   -webkit-animation-duration: 0.4s;
   animation-name: slideIn;
-  animation-duration: 0.4s
+  animation-duration: 0.4s;
 }
 
 /* The Close Button */
@@ -116,31 +116,42 @@ html, body {
   color: white;
   float: right;
   font-size: 28px;
-  /* font-weight: bold; */
+  transition: all 0.3s ease;
+  opacity: .5;
 }
 
 .close:hover,
 .close:focus {
-  color: #000;
+  opacity: 1;
   text-decoration: none;
   cursor: pointer;
 }
 
 .modal-header {
-  padding: 2px 16px;
-  background-color: #5cb85c;
+  background-color: #000000;
   color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 50px;
+  padding: 0 25px;
+  line-height: 50px;
 }
 
 .modal-body {
-  padding: 2px 16px;
-  height: 50vh;
+  padding: 0 25px;
+  height: calc(100vh - 100px);
 }
 
 .modal-footer {
-  padding: 2px 16px;
-  background-color: #5cb85c;
-  color: white;
+  padding: 0 25px;
+  background-color: #000000;
+  color: rgba(255, 255, 255, 0.5);
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  line-height: 50px;
 }
 
 /* Add Animation */
