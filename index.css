@@ -141,6 +141,43 @@ html, body {
 .modal-body {
   padding: 0 25px;
   height: calc(100vh - 100px);
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.modal-body-content {
+  width: 100%;
+  max-width: 650px;
+  overflow: scroll;
+  padding: 50px 0;
+  text-align: justify;
+  line-height: 28px;
+}
+
+.modal-body-content a {
+  text-decoration: none;
+  color: #108ee9;
+  opacity: .5;
+  transition: all 0.3s ease;
+}
+
+.modal-body-content a:hover {
+  opacity: 1;
+}
+
+.modal-body-content-wrapper {
+  margin-bottom: 50px;
+}
+
+.profilePicture {
+  height: 180px;
+  width: 180px;
+  border-radius: 50%;
+  border: 4px solid rgba(255, 255, 255, 0.1);
+  float: left;
+  margin: 10px 25px 15px 0;
 }
 
 .modal-footer {
