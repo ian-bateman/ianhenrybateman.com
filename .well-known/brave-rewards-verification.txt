@@ -1,4 +1,0 @@
-This is a Brave Rewards publisher verification file.
-
-Domain: ianhenrybateman.com
-Token: c7243c624026d4abb3ea10e64262d35acb66aa8a40ad9f85fc0d643b77e5c88c
